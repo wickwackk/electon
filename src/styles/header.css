@@ -24,12 +24,13 @@
   height: 50px;
   border-radius: 20px 0 0 20px;
   padding-left: 30px;
+  border: 1px solid white;
 }
 .header button {
   width: 15%;
   height: 50px;
   border-radius: 0 20px 20px 0;
   background-color: #003585;
-  border-color: white;
+  border: 1px solid white;
   color: white;
 }
