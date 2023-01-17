@@ -1,0 +1,35 @@
+.header {
+  background-color: #003585;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.headerRight {
+  width: 13%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header form {
+  width: 50%;
+}
+
+.header input {
+  width: 85%;
+  height: 50px;
+  border-radius: 20px 0 0 20px;
+  padding-left: 30px;
+}
+.header button {
+  width: 15%;
+  height: 50px;
+  border-radius: 0 20px 20px 0;
+  background-color: #003585;
+  border-color: white;
+  color: white;
+}
