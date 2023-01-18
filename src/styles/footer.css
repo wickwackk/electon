@@ -1,4 +1,31 @@
 .footer {
   background-color: #003585;
+  height: 300px;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 200px;
+}
+
+.footerLeft a {
+  margin-right: 30px;
+  color: white;
+  margin-left: 15px;
+}
+
+.footerRight {
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  width: 35%;
+  margin: 0;
 }

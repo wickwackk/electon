@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <div className="footer">
       <div className="container">
-        <div>
+        <div className="footerLeft">
           <Electon />
           <div>
             <a href="#">G</a>
@@ -13,7 +13,7 @@ export default function Footer() {
             <a href="#">V</a>
           </div>
         </div>
-        <div>
+        <div className="footerRight">
           <p>
             © 2023 Tuulai. Built using AQUA and Tuulai Theme. Terms and
             Conditions

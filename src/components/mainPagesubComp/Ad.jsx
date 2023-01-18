@@ -4,10 +4,12 @@ export default function Ad() {
   return (
     <div className="ad">
       <div className="container">
-        <button>New laptop</button>
-        <p>Sale up to 50% off</p>
-        <p>12 inch hd display</p>
-        <button>Shop now</button>
+        <div className="adInner">
+          <button>New laptop</button>
+          <h2>Sale up to 50% off</h2>
+          <p>12 inch hd display</p>
+          <button>Shop now</button>
+        </div>
       </div>
     </div>
   );

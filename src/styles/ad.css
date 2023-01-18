@@ -1,0 +1,21 @@
+.ad .container {
+  height: 450px;
+  background: url("../../public/ad.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 95px auto;
+  position: relative;
+  border-radius: 20px;
+}
+
+.adInner {
+  position: absolute;
+  right: 120px;
+  top: 100px;
+  text-align: center;
+  color: white;
+}
+.adInner h2 {
+  color: #a7f65c;
+  font-size: 40px;
+}
