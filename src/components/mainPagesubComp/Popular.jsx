@@ -1,12 +1,14 @@
 import "../../styles/popular.css";
+import { datas } from "../../datas";
+import Product from "./Product";
 
 export default function Popular() {
   return (
     <div className="popular">
       <div className="container">
-        <div>
+        <div className="popularBar">
           <h1>Popular products</h1>
-          <div>
+          <div className="popularButtons">
             <button>Cameras</button>
             <button>Laptops</button>
             <button>Tablets</button>
@@ -15,7 +17,11 @@ export default function Popular() {
           </div>
         </div>
 
-        <div></div>
+        <div className="products">
+          {datas.map((data, index) => {
+            return <Product detail={data} key={index} />;
+          })}
+        </div>
       </div>
     </div>
   );

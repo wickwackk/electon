@@ -1,4 +1,4 @@
-const datas = [
+export const datas = [
   {
     description:
       "Customize a Samsung Bespoke 3- or 4-door French door refrigerator or 4-Door Flex refrigerator with panels available in multiple colors and finishes. Plus, shop for matching appliances.",
