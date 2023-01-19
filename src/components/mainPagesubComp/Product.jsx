@@ -11,7 +11,9 @@ export default function Product(prop) {
           <p>{detail.name}</p>
           <p>${detail.price}</p>
         </div>
-        <BasketLogo />
+        <div className="basket">
+          <BasketLogo />
+        </div>
       </div>
     </div>
   );

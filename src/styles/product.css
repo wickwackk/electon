@@ -5,13 +5,20 @@
 .product {
   color: #003585;
   padding: 10px;
-  width: 24%;
+  width: 23%;
   border: 1px solid grey;
   border-radius: 20px;
-  margin-bottom: 20px;
+  height: 400px;
 }
 
 .productDetails {
   display: flex;
   justify-content: space-between;
+}
+
+.basket {
+  background: rgba(128, 128, 128, 0.321);
+  border-radius: 50%;
+  align-self: center;
+  padding: 10px;
 }
