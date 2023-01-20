@@ -12,6 +12,9 @@ datas.map((data) => {
 
 export default function Popular() {
   const [prod, setProd] = useState(datas.slice(0, 8));
+  function defaultFilter(cata) {
+    return setProd(datas.slice(0, 8));
+  }
   function cataFilter(cata) {
     setProd(
       datas.filter((data) => {
@@ -25,9 +28,10 @@ export default function Popular() {
         <div className="popularBar">
           <h1>Popular products</h1>
           <div className="popularButtons">
+            <button onClick={defaultFilter}>All</button>
             {categories.map((category, index) => (
               <button
-                className={isActive ? "active" : "notActive"}
+                // className={isActive ? "active" : "notActive"}
                 key={index}
                 onClick={() => {
                   cataFilter(category);

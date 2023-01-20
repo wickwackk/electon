@@ -17,25 +17,24 @@
 }
 
 .popularButtons {
-  width: 50%;
+  width: 65%;
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  justify-content: space-between;
 }
 
 .popular button {
   background: white;
   border: 1px solid #003585;
   color: #003585;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 10px 30px;
-  width: 20%;
-  height: 70px;
+  width: 18%;
+  height: 60px;
   font-size: 16px;
   font-weight: 600;
 }
 
-.popular button:active {
+.popular button:focus {
   border: none;
   background: #a7f65c;
   color: white;

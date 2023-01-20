@@ -114,7 +114,7 @@ export const datas = [
     price: 439,
     stock: 247,
     sale: 20,
-    category: "pad",
+    category: "computers & tablets",
   },
   {
     description:
@@ -145,7 +145,7 @@ export const datas = [
     price: 1200,
     stock: 10,
     sale: 247,
-    category: "laptop",
+    category: "computers & tablets",
   },
 
   {
@@ -205,13 +205,13 @@ export const datas = [
       { Connector_Type: "USB Type C" },
       { Compatible_Devices: "Apple iPhone" },
     ],
-    name: "Charger",
+    name: "Apple charger",
     id: "9c7a554c",
     image: "https://m.media-amazon.com/images/I/41iWogJnZQL._AC_SX679_.jpg",
     price: 1342,
     stock: 122,
     sale: 23,
-    category: "Apple",
+    category: "accessory",
   },
   {
     description:
@@ -228,7 +228,7 @@ export const datas = [
     price: 200,
     stock: 60,
     sale: 10,
-    category: "headphones",
+    category: "accessory",
   },
   {
     description:
@@ -246,7 +246,7 @@ export const datas = [
     price: 54,
     stock: 7,
     sale: 5,
-    category: "gaming console",
+    category: "accessory",
   },
   {
     description:
@@ -258,7 +258,7 @@ export const datas = [
     price: 24,
     stock: 17,
     sale: 15,
-    category: "appliance",
+    category: "appliances",
   },
   {
     description:
@@ -290,7 +290,7 @@ export const datas = [
     price: 1094,
     stock: 3,
     sale: 1,
-    category: "tablets",
+    category: "computers & tablets",
   },
   {
     description:
@@ -310,7 +310,7 @@ export const datas = [
     price: 189,
     stock: 22,
     sale: 0.4,
-    category: "tablets",
+    category: "computers & tablets",
   },
   {
     description:
@@ -330,7 +330,7 @@ export const datas = [
     price: 1099,
     stock: 3,
     sale: 0.2,
-    category: "tablets",
+    category: "computers & tablets",
   },
   {
     description:
@@ -352,7 +352,7 @@ export const datas = [
     price: 1399.99,
     stock: 5,
     sale: 0.1,
-    category: "tablets",
+    category: "computers & tablets",
   },
   {
     description:
@@ -374,7 +374,7 @@ export const datas = [
     price: 1399.99,
     stock: 4,
     sale: 0.1,
-    category: "tablets",
+    category: "computers & tablets",
   },
 
   {
@@ -439,7 +439,7 @@ export const datas = [
     price: 389.99,
     stock: 20,
     sale: 9.0,
-    category: "gaming console",
+    category: "accessory",
   },
 
   {
