@@ -1,12 +1,12 @@
 import "../../styles/popular.css";
-import { datas } from "../../datas";
+import { datas } from "../../util/datas";
 import Product from "./Product";
 import { useState } from "react";
 
 const categories = [];
 datas.map((data) => {
   if (!categories.includes(data.category)) {
-    categories.push(data.category);
+    return categories.push(data.category);
   }
 });
 

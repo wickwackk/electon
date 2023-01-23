@@ -1,11 +1,9 @@
-import LoginLogo from "../imageComp/LoginLogo";
+import Modal from "../subComp/Modal";
 
 export default function Login() {
   return (
     <div>
-      <a href="#">
-        <LoginLogo />
-      </a>
+      <Modal />
     </div>
   );
 }

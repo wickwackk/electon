@@ -1,6 +1,7 @@
 // import Electon from "./components/imageComp/electon";
 import "./App.css";
 // import { Route, Routes } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Body from "./components/Body";
 import Footer from "./components/Footer";
 
