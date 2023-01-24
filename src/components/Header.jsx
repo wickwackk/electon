@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="container">
-        <Electon />
+        <Electon color={"white"} />
         <form action="">
           <input type="search" placeholder="Search anything" />
           <button type="submit">Search</button>

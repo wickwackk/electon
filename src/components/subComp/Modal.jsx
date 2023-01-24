@@ -1,37 +1,48 @@
 import "../../styles/modal.css";
+import Modal from "react-bootstrap/Modal";
+import "bootstrap/dist/css/bootstrap.min.css";
+import { useState } from "react";
+import Electon from "../imageComp/Electon";
 
-export default function Modal() {
-  let modal = document.getElementById("myModal");
-  let btn = document.getElementById("myBtn");
-  let span = document.getElementsByClassName("close")[0];
+export default function MyModal() {
+  const [isOpen, setIsOpen] = useState(false);
 
-  function show() {
-    if (modal) {
-      modal.style.display = "block";
-    }
+  function showModal() {
+    setIsOpen(true);
   }
 
-  // function span() {
-  //   modal.style.display = "none";
-  // }
-
-  window.onclick = function (event) {
-    if (modal && event.target == modal) {
-      modal.style.display = "none";
-    }
-  };
+  function hideModal() {
+    setIsOpen(false);
+  }
   return (
     <div>
-      <button id="myBtn" onClick={show}>
-        Open Modal
-      </button>
-
-      <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-      </div>
+      <button onClick={showModal}>Sign in</button>
+      <Modal
+        dialogClassName="custom-dialog"
+        className="modal"
+        show={isOpen}
+        onHide={hideModal}
+      >
+        <Modal.Header>
+          <Modal.Title className="modalTitle">
+            <Electon dialogClassName="Electon" color={"#003585"} />
+            <button className="hideButton" onClick={hideModal}>
+              x
+            </button>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body className="modalBody">
+          <input
+            type="number email"
+            placeholder="И-мэйл эсвэл Утасны дугаар"
+            name="user"
+          />
+          <input type="password" placeholder="Нууц үг" name="password" />
+        </Modal.Body>
+        <Modal.Footer>
+          <button>Save</button>
+        </Modal.Footer>
+      </Modal>
     </div>
   );
 }
