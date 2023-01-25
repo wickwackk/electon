@@ -1,16 +1,18 @@
 import "../../styles/popular.css";
-import { datas } from "../../util/datas";
+// import { datas } from "../../util/datas";
 import Product from "./Product";
 import { useState } from "react";
+import axios from "axios";
 
-const categories = [];
-datas.map((data) => {
-  if (!categories.includes(data.category)) {
-    return categories.push(data.category);
-  }
-});
+export default function Popular(prop) {
+  const { datas } = prop;
 
-export default function Popular() {
+  const categories = [];
+  datas.map((data) => {
+    if (!categories.includes(data.category)) {
+      return categories.push(data.category);
+    }
+  });
   const [prod, setProd] = useState(datas.slice(0, 8));
   function defaultFilter(cata) {
     return setProd(datas.slice(0, 8));

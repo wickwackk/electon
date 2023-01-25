@@ -5,11 +5,12 @@ import Popular from "./mainPagesubComp/Popular";
 import Slider from "./mainPagesubComp/Slider";
 import Special from "./mainPagesubComp/Special";
 
-export default function Body() {
+export default function Body(prop) {
+  const { datas } = prop;
   return (
     <div className="body">
       <Slider />
-      <Popular />
+      <Popular datas={datas} />
       <Ad />
       <div className="container">
         <Special />
